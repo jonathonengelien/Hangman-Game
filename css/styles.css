@@ -1,0 +1,24 @@
+.container {
+    border: 10px;
+    border-color: green;
+}
+
+.content {
+    border: 2px;
+    border-color: green;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+
+h1 h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}

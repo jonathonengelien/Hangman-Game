@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Hangman-Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="css/reset.css" class="style">
+    <link type="text/css" rel="stylesheet" href="css/styles.css" class="style">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container border">
+        <div class="row">
+            <div class="col-md-12">
+               <header id="display-image">
+                    <img src="http://via.placeholder.com/350x75" alt="Logo Image" class="img-fluid">
+                </header> 
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container border"> 
+        <div class="row">
+            <div class="col-md-6 content" id="hangman-image">
+                 <!-- This will display my image that is being created (probably of a hiker climbing through mountains) --> 
+                 <img src="http://via.placeholder.com/100x150" alt="Hiking Image" class="img-fluid">  
+            </div>
+
+            <div class="col-md-6">
+                <div class="container border">
+                    <div class="row">
+                        <div class="col-md-12 content" id="game-instructions">
+                            <!-- This will host my game instructions -->
+                            <h1>Welcome!</h1>
+                            <p>This is the moment you've been waiting for.  You have your bags packs, you've spent months planning, you've flown thousands of miles to meet your destination.  You've prepared mentally and physically for this challenge, and now you're ready.  You're ready to begin your hike across the Alps!!</p>
+                            <hr>
+                            <p>We'll display the name of the next town on your journey, and it will be up to you to guess all the letters in that name before you can go to that destination.  You will have 12 guesses for each town name, but don't worry, there will be hints along the way.</p>
+
+                            <h3>Press any key to begin!</h3>
+                            <h3>God  Speed!</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container border">
+                <!-- This will dispaly the word, the letters guessed -->
+                    <div class="row">
+                        <div class="col-md-12 content" id="hangman-word">
+                            <div id="word">
+                                <h3>You're next destination is: <span id="next-destination"></span> </h3>
+                            </div>
+            
+                            <div id="letters-guessed">
+                                <h3>You've guessed: <span id="your-guesses"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container border">
+                <!-- This will display the amount of lives you have left and how many wins before you've reach the end -->
+                    <div class="row">
+                        <div class="col-md-12 content" id="hangman-score">
+                            <div id="attempts">
+                                <h3>Number of Attempts Left: <span id="lives-remaining"></span></h3>
+                            </div>
+            
+                            <div id="destinations">
+                                <h3>Number of Destinations Left <span id="levels-left"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="game.js"></script>
+</body>
+</html>
